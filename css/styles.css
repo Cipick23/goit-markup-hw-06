@@ -825,12 +825,11 @@ ul {
 
 /* footer input*/
 
-
 .input-footer {
     margin-left: 93px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: #FFF;
     font-family: Roboto;
@@ -840,20 +839,35 @@ ul {
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    gap: 20px;
+}
+
+.input-footer > h6 {
+    display: flex;
+    
 }
 
 .acces-input {
     display: flex;
     flex-direction: row;
+    gap: 12px;
 }
 
 .email-input {
     width: 358px;
     height: 50px;
     flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.48px;
 }
 
 .input-content {
+    padding: 15px 16px;
     width: 358px;
     height: 50px;
     flex-shrink: 0;
@@ -865,11 +879,31 @@ ul {
 
 
 .button-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
     top: 93px;
     right: 215px;
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-submit > svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* modal content*/
