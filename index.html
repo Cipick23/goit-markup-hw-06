@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/346625d40b/UntitledProject/style-svg.css">
+    <script defer src="https://i.icomoon.io/public/temp/346625d40b/UntitledProject/svgxuse.js"></script>
     <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -452,7 +454,11 @@
     <!-- modal section -->
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-            <button class="close-btn" data-modal-close>&times;</button>
+            <button class="close-btn" data-modal-close>
+                <svg class="icon-btn">
+                    <use href="/images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
             
             <form action="form-input" autocomplete="on" novalidate>
 
@@ -470,11 +476,17 @@
                     <label for="telephone" class="form-group">
                         <span class="label-text">Telephone</span>
                         <input id="telephone" type="number" placeholder="" name="telephone" class="icon-input" required>
+                        <svg class="input">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
                     </label>
             
                     <label for="email" class="form-group">
                         <span class="label-text">Email</span>
                         <input id="email" type="text" placeholder="" name="email" class="icon-input" required/>
+                        <svg class="input">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
                     </label>
             
                     <label class="form-group">
@@ -485,20 +497,19 @@
                     <div class="form-acces">
                         <label for="agree" class="form-group">
                             <input type="checkbox" name="agree" id="agree" value="" class="checkbox-size" required/>
-                            <p class="checkbox-paragraph">I agree with the letter and accept the <span class="terms-agree">Terms and Conditions</span></p>
+                            <p class="checkbox-paragraph">
+                                <svg class="vector-check">
+                                    <use href="./images/icons.svg#icon-vector-check"></use>
+                                </svg>
+                                I agree with the letter and accept the <span class="terms-agree">Terms and Conditions</span></p>
                         </label>
                         <button type="submit" class="button-blue">Send</button>
                     </div>
                 </div>
-
-                
-        
-                
             </form>
-
         </div>
     </div>
-
+    
     <script src="./js/modal.js"></script>
 </body>
 </html>

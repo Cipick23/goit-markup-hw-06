@@ -83,5 +83,8 @@
 <symbol id="icon-vector-check" viewBox="0 0 42 32">
 <path fill="currentcolor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.4 15.36l-0.32-0.32-3.2 2.88v0.32l11.2 10.88h0.32l24.32-23.040v-0.32l-3.2-2.88-21.12 20.16-8-7.68z"></path>
 </symbol>
+<symbol id="icon-close-black" viewBox="0 0 32 32">
+<path fill="currentcolor" d="M26.667 7.289l-1.956-1.956-7.822 7.822-7.822-7.822-1.956 1.956 7.822 7.822-7.822 7.822 1.956 1.956 7.822-7.822 7.822 7.822 1.956-1.956-7.822-7.822 7.822-7.822z"></path>
+</symbol>
 </defs>
 </svg>

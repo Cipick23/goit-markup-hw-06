@@ -505,7 +505,6 @@ ul {
 .icon-div-cards .icon-cards:focus {
     background-color: var(--background-hover-color-footer);
     color: var(--social-icon-color-footer);
-    
 }
 
 .title-image > h2 {
@@ -753,7 +752,6 @@ ul {
     left: 0;
     width: 100vw;
     min-height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -819,9 +817,18 @@ ul {
     transition: var(--transition);
 }
 
-.close-btn:focus,
-.close-btn:hover {
-    background-color: #C4C4C4;
+.icon-btn {
+    fill: #000000;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 6px;
+}
+
+.icon-btn:hover {
+    fill: #2196F3;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 /* footer input*/
@@ -862,7 +869,7 @@ ul {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
     letter-spacing: 0.48px;
 }
 
@@ -941,6 +948,7 @@ ul {
     letter-spacing: 0.12px;
     border-radius: 4px;
     border: 1px solid #75757580;
+    padding: 12px 42px;
 }
 
 .input {
@@ -950,6 +958,8 @@ ul {
     position: absolute;
     bottom: 459px;
     right: 457px;
+    top: 30px;
+    left: 16px;
 }
 
 .container-form > h3 {
@@ -1009,6 +1019,15 @@ ul {
     display: flex;
     flex-direction: row;
 }
+.checkbox-paragraph .vector-check {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 35px;
+    left: 16px;
+}
+
 
 .checkbox-paragraph {
     color: #757575;
