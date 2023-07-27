@@ -933,7 +933,7 @@ ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    /* gap: 4px; */
     background-color: #FFFFFF;
     position: relative;
     width: 448px;
@@ -963,8 +963,8 @@ ul {
     position: absolute;
     bottom: 459px;
     right: 457px;
-    top: 30px;
-    left: 16px;
+    top: 42px;
+    left: 12px;
 }
 
 .container-form > h3 {
@@ -993,9 +993,11 @@ ul {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 14px;
     letter-spacing: 0.12px;
-    }
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
 
 .form-acces .button-blue {
     width: 200px;
@@ -1015,6 +1017,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top: 20px;
 }
   
 .form-acces > label {
@@ -1062,6 +1065,7 @@ ul {
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
+    margin-top: 20px;
 }
 
 .form-group .checkbox-size {
