@@ -872,7 +872,7 @@ ul {
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid #ffffff4d;
+    border: 1px solid #ffffff4d #ffffff4d;
     background: #2196f300;
     box-shadow: 0px 4px 4px 0px #00000026;
 }
@@ -905,6 +905,16 @@ ul {
     width: 24px;
     height: 24px;
 }
+
+.button-submit:focus,
+.button-submit:hover {
+    cursor: pointer;
+}
+
+.email-input:focus,
+.email-input:hover {
+    cursor: pointer;
+} 
 
 /* modal content*/
 
