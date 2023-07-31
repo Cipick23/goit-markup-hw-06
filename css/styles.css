@@ -965,21 +965,18 @@ ul {
     right: 457px;
     top: 42px;
     left: 12px;
-    fill: #212121;
+    fill: #757575;
     transition: var(--transition);
 }
 
-.form-group input:focus {
+.form-group .icon-input:focus,
+.form-group .input:focus {
     border: 1px solid #2196F3;
     outline: none;
     cursor: pointer;
     color: #2196F3;
     fill: #2196F3;
     
-}
-
-.form-group input:hover {
-    background-image: url(/images/icons.svg#icon-person-black);
 }
 
 .container-form > h3 {
