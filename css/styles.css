@@ -62,12 +62,12 @@ ul {
     border-bottom: 1px;
     border: solid #ECECEC;
 }
-
+ /*
 .box {
-    /* display: flex; */
-    /* align-items: baseline; */
+    display: flex;
+    align-items: baseline;
 }
-
+ */
 .box ul {
     display: flex;
     flex-flow: row;
@@ -967,6 +967,10 @@ ul {
     left: 12px;
 }
 
+.form-top svg:hover {
+    fill: #2196F3;
+}
+
 .form-group input:focus {
     border: 1px solid #2196F3;
     outline: none;
@@ -1020,6 +1024,7 @@ ul {
     background: #2196F3;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;  
     color: #fff;
+    transition: var(--transition);
 }
 
 .form-acces {
@@ -1038,46 +1043,47 @@ ul {
     align-items: center;
 }
 
-.form-group .vector-check {
+.form-acces .vector-check {
     position: absolute;
     width: 11px;
     height: 8px;
     flex-shrink: 0;
-    top: 4px;
-    left: 2px;
+    top: 8px;
+    left: 16px;
+    transition: var(--transition);
+    /* */
+}
+
+.form-group .checkbox-size {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    vertical-align: -2px;
+    fill: #2196F3;
+    appearance: none;
+    /**/
+}
+
+.form-group .checkbox-size::before {
+    content: "✔";
+    position: absolute;
+    font-size: 1.2em;
+    right: -1px;
+    top: -0.3em;
     visibility: hidden;
 }
 
-.form-acces .vector-checkbox {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    top: 4px;
-    left: 2px;
-    border-radius: 2px;
-    border: 2px solid #212121;
+.form-group .checkbox-size:checked::before {
     visibility: visible;
-    fill: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 8px;
 }
 
-.form-group .vector-checkbox:focus + .checkbox-size,
-.form-group .vector-checkbox:checked:focus + .checkbox-size {
-    outline: 2px solid #212121;
-}
-
-.form-group .vector-checkbox:checked + .checkbox-size {
-    background-color: #2196F3;
+.form-group .checkbox-size:disabled {
     border-color: #2196F3;
-    fill: var(--link-social-hover-color);
-    outline: none;
-    stroke: var(--link-social-hover-color);
-    stroke-width: 0.2;
+    background-color :#2196F3;
+    color:#fff;
 }
-
+  
 .form-group .checkbox-paragraph {
     color: #757575;
     font-family: var(--font-family);
@@ -1103,14 +1109,6 @@ ul {
     letter-spacing: 0.42px;
     text-decoration-line: underline;
     margin-top: 20px;
-}
-
-.form-group .checkbox-size {
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  
-   /* display: none; */
 }
 
 .button-blue:hover,

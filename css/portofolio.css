@@ -63,11 +63,11 @@ ul {
     border-bottom: 1px;
     border: solid #ECECEC;
 }
-
+/*
 .box {
-    /* display: flex; */
-    /* align-items: baseline; */
-}
+     display: flex; */
+    /* align-items: baseline;
+} */
 
 .box ul {
     display: flex;
