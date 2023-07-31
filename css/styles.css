@@ -965,10 +965,8 @@ ul {
     right: 457px;
     top: 42px;
     left: 12px;
-}
-
-.form-top svg:hover {
-    fill: #2196F3;
+    fill: #212121;
+    transition: var(--transition);
 }
 
 .form-group input:focus {
@@ -976,10 +974,12 @@ ul {
     outline: none;
     cursor: pointer;
     color: #2196F3;
+    fill: #2196F3;
+    
 }
 
-.form-group input:focus-within > .input {
-    color: #2196F3;
+.form-group input:hover {
+    background-image: url(/images/icons.svg#icon-person-black);
 }
 
 .container-form > h3 {
@@ -1043,46 +1043,41 @@ ul {
     align-items: center;
 }
 
-.form-acces .vector-check {
+.icon-checkbox {
     position: absolute;
-    width: 11px;
-    height: 8px;
-    flex-shrink: 0;
-    top: 8px;
-    left: 16px;
+    top: 0px;
+    left: 1px;
     transition: var(--transition);
     /* */
 }
 
-.form-group .checkbox-size {
-    position: relative;
+  /* Style the checkbox */
+  .checkbox-size {
+    width: 20px;
+    height: 20px;
+    
+  }
+  
+  /* Style the checkmark icon */
+  .vector-check {
+    width: 11px;
+    height: 8px;
+    fill: #2196F3;
+    visibility: hidden;
+  }
+  
+  /* Style the checkbox icon */
+  .icon-checkbox {
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
-    vertical-align: -2px;
-    fill: #2196F3;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /**/
-}
-
-.form-group .checkbox-size::before {
-    content: "";
-    position: absolute;
-    font-size: 1.2em;
-    right: -1px;
-    top: -0.3em;
-    background-color: #fff;
-    display: block;
-    margin: 2px;
-    border-radius: 3px;
-}
-
-.form-group .checkbox-size:checked::before {
-    background-color: #2196F3;
-}
- 
+    fill: #212121;
+    visibility: hidden;
+  }
+  
+  .checkbox-paragraph a:hover {
+    text-decoration: underline;
+  }
+  
 .form-group .checkbox-paragraph {
     color: #757575;
     font-family: var(--font-family);
