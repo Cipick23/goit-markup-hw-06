@@ -662,9 +662,7 @@ ul {
 .icons-footer .icon-social-footer:focus {
     background-color: var(--background-hover-color-footer);
     color: var(--link-social-hover-color);
-    
 }
-
 
 .footer-address > h2 {
     color: #2196F3;
