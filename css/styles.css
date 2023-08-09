@@ -62,6 +62,15 @@ ul {
     border-bottom: 1px;
     border: solid #ECECEC;
 }
+
+.web-container {
+    display: flex;
+    justify-content: center;
+    width: 145px;
+    height: 31px;
+    margin: 24px 93px 25px 215px;
+}
+
  /*
 .box {
     display: flex;
@@ -74,14 +83,6 @@ ul {
     /* justify-content: space-around; */
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-.web-container {
-    display: flex;
-    justify-content: center;
-    width: 145px;
-    height: 31px;
-    margin: 24px 93px 25px 215px;
 }
 
 .global-header .container ul {
@@ -108,7 +109,6 @@ ul {
 .box .studio {
     display: inline-block;
     margin-right: 20px;
-    
 }
 
 .box .active {
