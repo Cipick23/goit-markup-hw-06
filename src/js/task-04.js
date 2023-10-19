@@ -7,13 +7,14 @@ function updateCounterValue() {
 }
 
 const increaseBtn = document.getElementById('increaseBtn');
+
 increaseBtn.addEventListener('click', () => {
-  counterValue++;
+  counterValue += 1;
   updateCounterValue();
 });
 
 const decreaseBtn = document.getElementById('decreaseBtn');
 decreaseBtn.addEventListener('click', () => {
-  counterValue--;
+  counterValue -= 1;
   updateCounterValue();
 });
