@@ -1,20 +1,25 @@
 let counterValue = 0;
 
-const counterValueElement = document.getElementById('counterValue');
+const valueElement = document.getElementById('value');
+const buttons = document.querySelectorAll('button[data-action]');
 
 function updateCounterValue() {
-  counterValueElement.textContent = counterValue;
+  valueElement.textContent = counterValue;
 }
 
-const increaseBtn = document.getElementById('increaseBtn');
+buttons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const action = event.target.dataset.action;
 
-increaseBtn.addEventListener('click', () => {
-  counterValue += 1;
-  updateCounterValue();
+    if (action === 'decrement') {
+      counterValue -= 1;
+    } else if (action === 'increment') {
+      counterValue += 1;
+    }
+
+    updateCounterValue();
+  });
 });
 
-const decreaseBtn = document.getElementById('decreaseBtn');
-decreaseBtn.addEventListener('click', () => {
-  counterValue -= 1;
-  updateCounterValue();
-});
+updateCounterValue();
+
